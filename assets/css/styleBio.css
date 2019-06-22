@@ -1,0 +1,53 @@
+body{
+    font-family: 'Dosis', 'Arial', sans-serif;
+    color:grey;
+    background-color: #EAEAE6;
+  }
+
+  .bioImage {
+    width:128px;
+    margin: 10px;
+    border-radius: 75%;
+  }
+
+  .minor{
+    margin-top: 0;
+    position: relative;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    /* text-transform: uppercase; */
+    margin: 0.67em 0;
+  }
+
+  .cover-bg {
+    position: absolute;
+    right: 0;
+    top: -60px;
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: none;
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cover-content {
+    margin: 100px;
+    width: 85%;
+    max-width: 800px;
+    z-index: 999;
+    position: relative;
+}
+a:hover {
+    color: lightcoral;
+}
+
+@media only screen and (max-width:680px) {
+    /* For desktop phones: */
+    .cover-content {
+    margin: 100px 7.5%;
+    }
+  }
