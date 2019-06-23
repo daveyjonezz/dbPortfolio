@@ -48,17 +48,6 @@ a {
 a:hover {
     color: lightcoral;
 }
-a img { display:none; }
-/* a:hover img { 
-  display: block;
-  width: 200px; 
-  position:absolute;
-  align-content: center;
-	-moz-transition:all 0.4s;
-	-webkit-transition:all 0.4s;
-	-o-transition:all 0.4s;
-	transition:all 0.4s;
-} */
 
 @media only screen and (max-width:680px) {
     /* For desktop phones: */
