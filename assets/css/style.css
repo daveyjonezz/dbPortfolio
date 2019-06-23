@@ -16,7 +16,13 @@ body{
     /* Set a background color that will be displayed
        while the background image is loading */
     background-color: #464646;
-  }
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
   .home-text {
     display: flex;
     flex-direction: column;
@@ -64,4 +70,23 @@ body{
   }
   .margin {
       margin-top: 30px
+  }
+
+  html {
+    animation: fadeSiteIn 0.5s ease forwards; /* [1] */
+  }
+  
+  html.fadeSiteOut {
+  animation:  fadeSiteOut 0.5s ease forwards; /* [2] */
+  }
+  
+  
+  @keyframes fadeSiteIn { /* [1] */
+    from   { opacity: 0; }
+    to    { opacity: 1; }
+  }
+  
+  @keyframes fadeSiteOut { /* [2] */
+    from   { opacity: 1; }
+    to     { opacity: 0; }
   }
