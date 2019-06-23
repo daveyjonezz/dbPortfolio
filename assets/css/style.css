@@ -55,8 +55,13 @@ body{
       border: solid 2px white;
       color: white;
       letter-spacing: 0.1em;
+      background: none;
   }
 
+  .button:hover {
+    background: none;
+    box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
+  }
   .margin {
       margin-top: 30px
   }
