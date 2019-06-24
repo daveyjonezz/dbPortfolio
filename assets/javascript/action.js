@@ -17,6 +17,10 @@ $(".toggle").on("click", function () {
     }
 })
 
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+
 $(function() {
 
     $('a').each(function() { /* [1] */
@@ -54,3 +58,21 @@ $(function() {
     });
   
 });
+
+$('.phone').hover(
+    function () {
+      $('#hoverMe').show();
+    }, 
+    function () {
+      $('#hoverMe').hide();
+    }
+  );
+
+  $('.email').hover(
+    function () {
+      $('#hoverMeTwo').show();
+    }, 
+    function () {
+      $('#hoverMeTwo').hide();
+    }
+  );

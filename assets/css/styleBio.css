@@ -20,10 +20,6 @@ body{
     /* text-transform: uppercase; */
     margin: 0.67em 0;
   }
-
-  #joan{
-    display: none;
-  }
   .cover-bg {
     position: absolute;
     right: 0;
@@ -50,6 +46,10 @@ a {
 }
 a:hover {
     color: lightcoral;
+}
+#hoverMe, #hoverMeTwo, #joan{
+  font-size: 12px;
+  display: none;
 }
 
 @media only screen and (max-width:680px) {
