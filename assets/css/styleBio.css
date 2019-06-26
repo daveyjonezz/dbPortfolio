@@ -52,10 +52,20 @@ a:hover {
   display: none;
 }
 
+.phone-mobile, .email-mobile{
+  display: none;
+}
+
 @media only screen and (max-width:680px) {
     /* For desktop phones: */
     .cover-content {
     margin: 100px 7.5%;
+    }
+    .phone-mobile, .email-mobile{
+      display: inline-block;
+    }
+    .phone, .email{
+      display: none;
     }
   }
 

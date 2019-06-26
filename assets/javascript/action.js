@@ -76,3 +76,27 @@ $('.phone').hover(
       $('#hoverMeTwo').hide();
     }
   );
+
+  var hasBeenClickedPhone = false;
+$(".phone-mobile").on("click", function () {
+    if (hasBeenClickedPhone === false) {
+        $('#hoverMe').show();
+        hasBeenClickedPhone = true
+    }
+    else {
+        $('#hoverMe').hide();
+        hasBeenClickedPhone = false;
+    }
+})
+
+var hasBeenClickedEmail = false;
+$(".email-mobile").on("click", function () {
+    if (hasBeenClickedEmail === false) {
+        $('#hoverMeTwo').show();
+        hasBeenClickedEmail = true
+    }
+    else {
+        $('#hoverMeTwo').hide();
+        hasBeenClickedEmail = false;
+    }
+})
