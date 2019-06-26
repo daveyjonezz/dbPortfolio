@@ -49,6 +49,7 @@ a:hover {
 }
 #hoverMe, #hoverMeTwo, #joan{
   font-size: 12px;
+  color: grey;
   display: none;
 }
 
