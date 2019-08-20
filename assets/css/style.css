@@ -73,20 +73,20 @@ body.fade-out {
   }
 
   html {
-    animation: fadeSiteIn 0.5s ease forwards; /* [1] */
+    animation: fadeSiteIn 0.5s ease forwards;
   }
   
   html.fadeSiteOut {
-  animation:  fadeSiteOut 0.5s ease forwards; /* [2] */
+  animation:  fadeSiteOut 0.5s ease forwards;
   }
   
   
-  @keyframes fadeSiteIn { /* [1] */
+  @keyframes fadeSiteIn {
     from   { opacity: 0; }
     to    { opacity: 1; }
   }
   
-  @keyframes fadeSiteOut { /* [2] */
+  @keyframes fadeSiteOut {
     from   { opacity: 1; }
     to     { opacity: 0; }
   }

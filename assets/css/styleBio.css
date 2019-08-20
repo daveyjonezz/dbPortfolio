@@ -20,6 +20,10 @@ body{
     /* text-transform: uppercase; */
     margin: 0.67em 0;
   }
+
+  .modalFormat{
+    margin-top: 20px;
+  }
   .cover-bg {
     position: absolute;
     right: 0;
@@ -83,7 +87,7 @@ span a {
 	position: relative;
 	display: inline-block;
 	outline: none;
-	color: #2c2b2b;
+	color: teal;
 	text-decoration: none;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 }
@@ -140,4 +144,37 @@ animation:  fadeSiteOut 0.5s ease forwards; /* [2] */
 @keyframes fadeSiteOut { /* [2] */
   from   { opacity: 1; }
   to     { opacity: 0; }
+}
+
+  
+
+
+  
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid grey;
+    box-shadow: 0 1px 0 0 grey;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid lightcoral;
+    box-shadow: 0 1px 0 0 lightcoral;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+  } 
+
+  input[type=text], input[type=email], textarea.materialize-textarea {
+    color: teal;
+    font-family: 'Dosis', 'Arial', sans-serif;
+  }
+
+  #modalTitle{
+    text-align: center;
+  }
+
+  .sendBtn {
+    color: grey;
 }
